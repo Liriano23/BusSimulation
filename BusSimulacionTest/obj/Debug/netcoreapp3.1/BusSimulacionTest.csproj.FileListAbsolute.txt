@@ -1,0 +1,13 @@
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.csprojAssemblyReference.cache
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.AssemblyInfoInputs.cache
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.AssemblyInfo.cs
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.csproj.CoreCompileInputs.cache
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\bin\Debug\netcoreapp3.1\BusSimulacionTest.exe
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\bin\Debug\netcoreapp3.1\BusSimulacionTest.deps.json
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\bin\Debug\netcoreapp3.1\BusSimulacionTest.runtimeconfig.json
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\bin\Debug\netcoreapp3.1\BusSimulacionTest.runtimeconfig.dev.json
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\bin\Debug\netcoreapp3.1\BusSimulacionTest.dll
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\bin\Debug\netcoreapp3.1\BusSimulacionTest.pdb
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.dll
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.pdb
+C:\Users\Liria\OneDrive\Escritorio\EjmploBus\EjemploBus2\BusSimulacionTest\BusSimulacionTest\obj\Debug\netcoreapp3.1\BusSimulacionTest.genruntimeconfig.cache
