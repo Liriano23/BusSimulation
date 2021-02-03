@@ -1,0 +1,51 @@
+﻿<Window x:Class="ProyectoBusGrafico.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoBusGrafico"
+        mc:Ignorable="d"
+        Title="Programa Bus" Height="600" Width="850">
+    <Grid Margin="0,0,0,-4">
+        <Label Content="Primera Estación " HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Segunda Estación " HorizontalAlignment="Left" Margin="500,30,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="Iniciar" Content="Iniciar" HorizontalAlignment="Left" Height="64" Margin="158,438,0,0" VerticalAlignment="Top" Width="120" Click="Iniciar_Click" FontSize="14"/>
+        <TextBox x:Name="EntrandoE1" HorizontalAlignment="Left" Height="22" Margin="107,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" FontSize="14"/>
+        <Label Content="Personas Esperando " HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="EsperandoE1" HorizontalAlignment="Left" Height="22" Margin="251,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Personas Desmontando " HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Desmontando1" HorizontalAlignment="Left" Height="22" Margin="251,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Personas En bus antes de desmontar " HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="AntesEnbus1" HorizontalAlignment="Left" Height="22" Margin="251,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Personas que quedan en el bus" HorizontalAlignment="Left" Margin="11,215,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Despuesdedesmontarseenelbusquedan1" HorizontalAlignment="Left" Height="22" Margin="251,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Nuevas Personas Esperando " HorizontalAlignment="Left" Margin="11,240,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Nesperando1" HorizontalAlignment="Left" Height="22" Margin="251,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Nuevas Personas En bus " HorizontalAlignment="Left" Margin="15,268,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="NuevasPersonasEnbus" HorizontalAlignment="Left" Height="22" Margin="251,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Numero de Vueltas" HorizontalAlignment="Left" Margin="17,338,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Nvueltas1" HorizontalAlignment="Left" Height="22" Margin="251,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" FontSize="14"/>
+
+        <TextBox x:Name="EntrandoE2" HorizontalAlignment="Left" Height="22" Margin="487,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" FontSize="14"/>
+        <Label Content="Personas Esperando " HorizontalAlignment="Left" Margin="433,107,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="EsperandoE2" HorizontalAlignment="Left" Height="22" Margin="669,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Personas Desmontando " HorizontalAlignment="Left" Margin="433,141,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Desmontando2" HorizontalAlignment="Left" Height="22" Margin="669,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Personas En bus antes de desmontar " HorizontalAlignment="Left" Margin="433,170,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Enbus1_Copy" HorizontalAlignment="Left" Height="22" Margin="669,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Personas que quedan en el bus" HorizontalAlignment="Left" Margin="434,200,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Despuesdedesmontarseenelbusquedan2" HorizontalAlignment="Left" Height="22" Margin="669,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Nuevas Personas Esperando " HorizontalAlignment="Left" Margin="434,225,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Nesperando2" HorizontalAlignment="Left" Height="22" Margin="669,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Nuevas Personas En bus " HorizontalAlignment="Left" Margin="438,253,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="NuevasPersonasEnbus_Copy" HorizontalAlignment="Left" Height="22" Margin="669,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Numero de Vueltas" HorizontalAlignment="Left" Margin="440,335,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Nvueltas2" HorizontalAlignment="Left" Height="22" Margin="669,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" FontSize="14"/>
+        <Button x:Name="Salir" Content="Salir" HorizontalAlignment="Left" Height="64" Margin="539,433,0,0" VerticalAlignment="Top" Width="120" Click="Salir_Click" FontSize="14" />
+        <Label Content="Tiempo bus " HorizontalAlignment="Left" Margin="13,303,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Tiempo1" HorizontalAlignment="Left" Height="22" Margin="249,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Tiempo bus " HorizontalAlignment="Left" Margin="438,295,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="Tiempo2" HorizontalAlignment="Left" Height="22" Margin="669,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+
+    </Grid>
+</Window>
