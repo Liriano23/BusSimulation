@@ -35,28 +35,33 @@ namespace BusSimulacionTest
             do
             {
                 if (vueltasBus <= 0)
-                    Estacion1(enBus1, 0);
+                    Estacion1(0);
                 else
-                    Estacion1(enBus1, desmontaron);
+                    Estacion1(desmontaron);
 
                 salir += 1;
-            } while (salir < 3);
+            } while (salir < 5);
 
 
         }
 
-        static void Estacion1(int enBus, int desmontaron) //Metodo que contiene la logica estacion 1
+        static void Estacion1(int desmontaronP) //Metodo que contiene la logica estacion 1
         {
+            int cantidadAsientosDisponibles = 0;
+            if (desmontaronP > 0)
+            {
+                Program.desmontaron = GenerarAleatorio(0, 10);
+            }
+
             Console.WriteLine("Entrando a estacion 1" );
             llegando1 = GenerarAleatorio(1, 50);
             esperando1 += llegando1;
             Console.WriteLine("Esperando 1 = "+ Program.esperando1);
-            int cantidadAsientosDisponibles = 0;
-
-            Console.WriteLine("\nDesmontaron = " + Program.desmontaron);
+            
             Console.WriteLine($"\nEn bus antes de desmontar = {enBus1}");
-            enBus = (enBus - desmontaron);
-            Console.WriteLine("\nDespues de desmontarse en el bus quedan = " + enBus);
+            Console.WriteLine("\nDesmontaron = " + Program.desmontaron);
+            enBus1 = (enBus1 - Program.desmontaron);
+            Console.WriteLine("\nDespues de desmontarse en el bus quedan = " + enBus1);
 
             while (esperando1 < CAPACIDADBUS)
             {
@@ -67,42 +72,51 @@ namespace BusSimulacionTest
             }
 
             
-            cantidadAsientosDisponibles =  (Program.CAPACIDADBUS - enBus);
-            Program.enBus1 = (enBus + cantidadAsientosDisponibles);
+
+            cantidadAsientosDisponibles = (CAPACIDADBUS - enBus1);
+            System.Console.WriteLine( "\n Cantidad asientos disponibles= "+cantidadAsientosDisponibles);
+            Program.enBus1 = (enBus1 + cantidadAsientosDisponibles);
             Program.esperando1 = (Program.esperando1 - cantidadAsientosDisponibles);
+            
+            
 
-
-   
+            //if(desmontaronP)
+            //{
+            //    Program.esperando1 = (esperando1 - CAPACIDADBUS);
+            //}
+                
+                
             Console.WriteLine($"\nEsperando = {esperando1}");
-            enBus1 = (enBus - desmontaron);
-            vueltasBus += 1;
+            //enBus1 = (enBus1 - desmontaron);
 
+            vueltasBus += 1;
             Console.WriteLine("\nCantidad de pasajeros en el bus = "+enBus1);
             Console.WriteLine("\nNumero de vueltas = " + vueltasBus);
             Console.ReadKey();
+            
 
             Console.Clear();
             Console.WriteLine("\nEntrando a estacion 2");
-            Estacion2(enBus1);
-
+            Estacion2();
+            
 
             
             Console.Clear();
         }
 
-        static void Estacion2(int enBus) //Metodo que contiene la logica estacion 2
+        static void Estacion2() //Metodo que contiene la logica estacion 2
         {
             int cantidadAsientosDisponibles = 0;
             Program.llegando2 = GenerarAleatorio(1,50); // Llegando estacion 2
             Program.esperando2 += Program.llegando2; //Esperando estacion 2
 
             Console.WriteLine("Estan esperando en la estacion 2 = "+Program.esperando2);
-            Console.WriteLine("\nLlegaron en Bus"+enBus);
+            Console.WriteLine("\nLlegaron en Bus"+enBus1);
             Program.desmontaron = GenerarAleatorio(0, 10);
 
             Console.WriteLine("\nDesmontaron = "+ Program.desmontaron);
-            enBus = (enBus - desmontaron);
-            Console.WriteLine("\nDespues de desmontarse en el bus quedan = "+enBus);
+            enBus1 = (enBus1 - Program.desmontaron);
+            Console.WriteLine("\nDespues de desmontarse en el bus quedan = "+enBus1);
   
             while (Program.esperando2 < CAPACIDADBUS)
             {
@@ -112,8 +126,8 @@ namespace BusSimulacionTest
                 Console.WriteLine($"Esperando2 CICLO {Program.esperando2}");
             }
 
-            cantidadAsientosDisponibles = (CAPACIDADBUS - enBus);
-            enBus1 = (enBus + cantidadAsientosDisponibles);
+            cantidadAsientosDisponibles = (CAPACIDADBUS - enBus1);
+            enBus1 = (enBus1 + cantidadAsientosDisponibles);
             esperando2 = (esperando2 - cantidadAsientosDisponibles);
 
   
@@ -121,7 +135,7 @@ namespace BusSimulacionTest
             Console.WriteLine("\nNuevo bus = "+ enBus1);
             Console.WriteLine("\nQuedaron esperando: "+esperando2);
 
-            vueltasBus += 1;
+            
             Console.WriteLine("Numero de vueltas = "+vueltasBus);
 
 
